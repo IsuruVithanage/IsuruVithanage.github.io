@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Let's Learn JavaScript DOM</title>
+
+    <style>
+        html {
+            font-family: sans-serif;
+            color: rgb(0, 0, 0);
+        }
+
+        body {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        div, article {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #900bea;
+        }
+
+        #email-address{
+            background-color: chocolate;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>Accessing Elements in the DOM</h1>
+
+<h2>Name (#name)</h2>
+<div id="demo">Access me by ID</div>
+
+<h2>Address (.address)</h2>
+<div class="classA">Access me by class (1)</div>
+<div class="classA">Access me by class (2)</div>
+
+<h2>Numbers (mobile)</h2>
+<article>Access by tag (1)</article>
+<article>Access by tag (2)</article>
+
+<!-- in CSS we select as #email-address -->
+<h2>Email</h2>
+<div id="email-address">Access me by query</div>
+
+<!-- in CSS we select as .description -->
+<h2>Description</h2>
+<div class="description">Access by description</div>
+<div class="description">Access by description</div>
+
+</body>
+
+</html>
