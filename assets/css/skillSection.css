@@ -54,6 +54,7 @@
     border-radius: 25px;
     margin-top: 5px;
     position: relative;
+    transition: all 5s;
 }
 .skill_bar .bar span{
     width: 50%;
@@ -61,6 +62,7 @@
     position: absolute;
     background-color: #00ffc4;
     border-radius: 25px;
+
 }
 .skill_bar .bar .html{
     width: 90%;

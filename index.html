@@ -43,11 +43,12 @@
 
         /*Header styling*/
         header {
-            background-image: url("assets/images/imp.jpg");
+            /*background-image: url("assets/images/imp.jpg");*/
             height: 100vh;
             width: 100%;
             position: relative;
-            background-size: cover;
+            /*background-size: cover;*/
+            background-color: black;
         }
 
 
@@ -214,7 +215,24 @@
         .reveal.active{
             transform: translateY(0px);
             opacity: 1;
+        }
 
+        .edu_section{
+            width: 500px;
+            height: 150px;
+            position: relative;
+            left: 50px;
+            border-radius: 15px;
+           /* border: 1px solid #00ffc4;*/
+            text-align: right;
+            box-shadow: 4px 4px 20px #1d1d1d;
+        }
+
+        .edu_section p{
+            padding-right: 10px;
+            color: white;
+            font-family: 'Sora', sans-serif;
+            padding-top: 10px;
         }
 
 
@@ -236,6 +254,8 @@
 
         </ul>
     </div>
+
+    <img src="assets/images/mypic1.png" alt="" height="600px" style="position: absolute; left: 800px; top: 65px">
 
     <!--Heading section-->
     <section id="hederSection" >
@@ -298,7 +318,7 @@
             <div class="skill_bar">
                 <div class="info">
                     <p>HTML</p>
-                    <P>90%</P>
+                    <P id="n90">90</P>
                 </div>
                 <div class="bar">
                     <span class="html"></span>
@@ -307,7 +327,7 @@
             <div class="skill_bar">
                 <div class="info">
                     <p>CSS</p>
-                    <P>85%</P>
+                    <P id="n85">85</P>
                 </div>
                 <div class="bar">
                     <span class="css"></span>
@@ -316,7 +336,7 @@
             <div class="skill_bar">
                 <div class="info">
                     <p>Java</p>
-                    <P>80%</P>
+                    <P id="n80">80</P>
                 </div>
                 <div class="bar">
                     <span class="sass"></span>
@@ -325,16 +345,16 @@
             <div class="skill_bar">
                 <div class="info">
                     <p>Java Script</p>
-                    <P>80%</P>
+                    <P id="n81">80</P>
                 </div>
-                <div class="bar">
+                <div class="bar" data-progress="80">
                     <span class="js"></span>
                 </div>
             </div>
             <div class="skill_bar">
                 <div class="info">
                     <p>React js</p>
-                    <P>75%</P>
+                    <P id="n75">75</P>
                 </div>
                 <div class="bar">
                     <span class="react"></span>
@@ -343,7 +363,7 @@
             <div class="skill_bar">
                 <div class="info">
                     <p>Python</p>
-                    <P>70%</P>
+                    <P id="n70">70</P>
                 </div>
                 <div class="bar">
                     <span class="node"></span>
@@ -352,7 +372,7 @@
             <div class="skill_bar">
                 <div class="info">
                     <p>Bosstrap</p>
-                    <P>65%</P>
+                    <P id="n65">65</P>
                 </div>
                 <div class="bar">
                     <span class="express"></span>
@@ -361,7 +381,7 @@
             <div class="skill_bar">
                 <div class="info">
                     <p>MySQL</p>
-                    <P>60%</P>
+                    <P id="n60">60</P>
                 </div>
                 <div class="bar">
                     <span class="mongo"></span>
@@ -369,6 +389,30 @@
             </div>
         </div>
     </div>
+</main>
+<main id="m3" style="height: 100vh">
+    <div class="skills_head">
+        <h2>My <span>Education</span></h2>
+    </div>
+
+    <div class="edu_section reveal" style="left: 130px; top: -20px">
+        <p style="color: #00ffc4; font-weight: 700; padding-top: 15px">2006-2019</p>
+        <p style="font-weight: 700; font-size: 25px">School Education</p>
+        <p style="color: #a0a0a0">I studied at Mahinda Collage galle and did my Advanced Level examination in Physical Science Stream </p>
+    </div>
+
+    <div class="edu_section reveal" style="top: -55px; left: 700px">
+        <p style="color: #00ffc4; font-weight: 700; padding-top: 15px">2020-2023</p>
+        <p style="font-weight: 700; font-size: 25px">External Diploma</p>
+        <p style="color: #a0a0a0">I am Following the Graduate Diploma In Software Engineering at IJSE</p>
+    </div>
+
+    <div class="edu_section reveal" style="top: -98px; left: 130px">
+        <p style="color: #00ffc4; font-weight: 700; padding-top: 15px">2022-2026</p>
+        <p style="font-weight: 700; font-size: 25px">Higher Education</p>
+        <p style="color: #a0a0a0">I am reading for a degree in B.Sc (Hons.) in Information Technology and Management</p>
+    </div>
+
 </main>
 
 
@@ -404,5 +448,61 @@
 
     }
 </script>
+<!--
+<script>
+    const skillsSection = document.getElementsByClassName("skills_section");
+    const progressBar = document.querySelectorAll(".bar");
+
+    function showProgess(){
+        progressBar.forEach(progressBar=>{
+            const value = progressBar.dataset.progress;
+            progressBar.style.opacity = 1;
+            progressBar.style.width = `${value}%`;
+        });
+    }
+
+    window.addEventListener("scroll", ()=>{
+        const sectionPos = skillsSection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight;
+
+        if (sectionPos < screenPos){
+            showProgess();
+        }
+    });
+</script>-->
+<script>
+    var speed = 10;
+
+    /* Call this function with a string containing the ID name to
+     * the element containing the number you want to do a count animation on.*/
+    function incEltNbr(id) {
+        elt = document.getElementById(id);
+        console.log(elt);
+        endNbr = Number(document.getElementById(id).innerHTML);
+        console.log(endNbr);
+        incNbrRec(0, endNbr, elt);
+    }
+
+    /*A recursive function to increase the number.*/
+    function incNbrRec(i, endNbr, elt) {
+        if (i <= endNbr) {
+            elt.innerHTML = i;
+            setTimeout(function() {//Delay a bit before calling the function again.
+                incNbrRec(i + 1, endNbr, elt);
+            }, speed);
+        }
+    }
+
+    incEltNbr("n90"); /*Call this funtion with the ID-name for that element to increase the number within*/
+    incEltNbr("n75"); /*Call this funtion with the ID-name for that element to increase the number within*/
+    incEltNbr("n70"); /*Call this funtion with the ID-name for that element to increase the number within*/
+    incEltNbr("n80"); /*Call this funtion with the ID-name for that element to increase the number within*/
+    incEltNbr("n85"); /*Call this funtion with the ID-name for that element to increase the number within*/
+    incEltNbr("n60"); /*Call this funtion with the ID-name for that element to increase the number within*/
+    incEltNbr("n65"); /*Call this funtion with the ID-name for that element to increase the number within*/
+    incEltNbr("n81"); /*Call this funtion with the ID-name for that element to increase the number within*/
+
+</script>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
 </body>
 </html>
