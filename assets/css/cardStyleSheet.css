@@ -1,0 +1,45 @@
+
+.pro_section {
+    width: 400px;
+    height: 250px;
+    left: 500px;
+    border-radius: 15px;
+    text-align: left;
+    color: white;
+    overflow: hidden;
+}
+
+.intro p {
+    visibility: hidden;
+    padding-left: 2px;
+
+}
+
+.pro_section:hover {
+    cursor: pointer;
+}
+
+.pro_section:hover .intro {
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pro_section:hover .intro p {
+    visibility: visible;
+}
+
+.cardContainer {
+    display: flex;
+}
+
+.reveal {
+    position: absolute;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
