@@ -6,7 +6,7 @@
     <link rel="icon" href="assets/images/Logo.jpg">
     <meta name="keywords" content="IPMV, Isuru Vithanage, Isuru, isuru vithanage, ipmv">
     <meta name="description" content="I am Isuru Pramod Mawella Vithanage. This is my profile">
-    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/skillSection.css">
     <meta name="theme-color" content="black">
@@ -14,455 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/cardStyleSheet.css">
-    <style>
-        /*Style the scrolbar*/
-        html {
-            scrollbar-color: rgb(1, 1, 1) rgb(110, 110, 110);
-        }
-
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey;
-            border-radius: 8px;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: rgb(110, 110, 110);
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgb(110, 110, 110);
-        }
-
-        ::-webkit-scrollbar-track-piece {
-            background: rgb(1, 1, 1);
-        }
-
-        /*Header styling*/
-        header {
-            /*background-image: url("assets/images/imp.jpg");*/
-            height: 100vh;
-            width: 100%;
-            position: relative;
-            /*background-size: cover;*/
-            background-color: black;
-        }
-
-        body,html{
-            scroll-behavior: smooth;
-        }
-
-
-        header > div > ul {
-            position: absolute;
-            right: 10px;
-            top: 13px;
-            bottom: 0;
-            font-size: 18px;
-            font-family: 'B612', sans-serif;
-            list-style: none;
-            color: white;
-
-        }
-
-        li>a{
-            color: #b6b6b6;
-        }
-
-        header > div:nth-child(1) > ul > li{
-            margin-top: 10px;
-            padding: 0 19px 0 19px;
-            display: inline-block;
-            color: #b6b6b6;
-            text-decoration: none;
-            font-weight: 600;
-
-        }
-
-        header > div:nth-child(1) > ul > li a:hover {
-            color: #00ffc4;
-            cursor: pointer;
-        }
-
-        header > div:nth-child(1) > div {
-            position: relative;
-            height: 30px;
-        }
-
-        header > div:nth-child(1) > div:nth-child(1) > h3 {
-            margin-top: 9px;
-            padding: 0 19px 0 19px;
-            display: inline-block;
-            font-size: 30px;
-            letter-spacing: 13px;
-            position: absolute;
-            font-family: 'B612', sans-serif;
-            font-weight: 800;
-        }
-
-
-        header > div:nth-child(1) {
-            color: #a0a0a0;
-            height: 7vh;
-            width: 100%;
-        }
-
-        h3:hover {
-            color: #00ffc4;
-        }
-
-        #hederSection > h1 {
-            color: white;
-            position: absolute;
-            left: 100px;
-            top: 230px;
-            font-size: 60px;
-            font-family: 'Sora', sans-serif;
-            letter-spacing: 10px;
-            font-weight: 800;
-        }
-
-        #hederSection > p {
-            width: 600px;
-            color: #9c9c9c;
-            position: absolute;
-            left: 100px;
-            top: 340px;
-            font-size: 21px;
-            font-family: Arial;
-        }
-
-        #hederSection {
-            position: relative;
-            bottom: 73px;
-            right: 30px;
-        }
-
-        .icon {
-            position: absolute;
-            top: 450px;
-            left: 70px;
-        }
-
-        /*Main Styling*/
-        main {
-            width: 100%;
-            height: 100vh;
-            background-color: black;
-            position: relative;
-        }
-
-
-        #aboutMeSection > h1 {
-            color: white;
-            position: absolute;
-            left: 650px;
-            top: 810px;
-            font-family: 'Sora', sans-serif;
-            font-size: 60px;
-            width: 500px;
-
-        }
-
-        #aboutMeSection {
-            left: 20px;
-            top: -670px;
-            position: absolute;
-        }
-
-        #aboutme {
-            color: #d0d0d0;
-            position: absolute;
-            left: 650px;
-            top: 930px;
-            font-family: Arial;
-            font-size: 18px;
-            width: 600px;
-            text-align: justify;
-            text-justify: inter-word;
-            font-weight: 200;
-        }
-
-        button {
-            border-radius: 10px;
-            width: 130px;
-            height: 40px;
-            color: #00ffc4;
-            background-color: black;
-            border-color: #00ffc4;
-            font-family: 'Sora', sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        #btnCv {
-            position: absolute;
-            left: 650px;
-            top: 1150px;
-        }
-
-        #btnViewPro {
-            top: 330px;
-            left: 600px;
-            position: absolute;
-            z-index: 3;
-        }
-
-        button:hover {
-            background-color: #00ffc4;
-            color: black;
-            cursor: pointer;
-            transition: 1s ease;
-            border: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .reveal {
-            position: absolute;
-            transform: translateY(150px);
-            opacity: 0;
-            transition: all 2s ease;
-        }
-
-        .reveal.active {
-            transform: translateY(0px);
-            opacity: 1;
-        }
-
-
-        .edu_section {
-            width: 500px;
-            height: 150px;
-            position: relative;
-            left: 50px;
-            border-radius: 15px;
-            /* border: 1px solid #00ffc4;*/
-            text-align: right;
-            box-shadow: 4px 4px 20px #1d1d1d;
-        }
-
-
-
-        .edu_section p {
-            padding-right: 10px;
-            color: white;
-            font-family: 'Sora', sans-serif;
-            padding-top: 10px;
-
-        }
-
-        .pro_section {
-            width: 400px;
-            height: 250px;
-            left: 500px;
-            border-radius: 15px;
-            text-align: left;
-            color: white;
-            overflow: hidden;
-        }
-
-        .intro p {
-            visibility: hidden;
-            padding-left: 2px;
-
-        }
-
-        .pro_section:hover {
-            cursor: pointer;
-        }
-
-        .pro_section:hover .intro {
-            height: 130px;
-            background-color: rgba(0, 0, 0, 0.7);
-        }
-
-        .pro_section:hover .intro p {
-            visibility: visible;
-        }
-
-        #cardContainer {
-            display: flex;
-        }
-
-        .intro {
-            height: 70px;
-            width: 400px;
-            box-sizing: border-box;
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.73);
-            color: white;
-            bottom: -1px;
-            transition: 1s;
-            padding-left: 15px;
-            font-family: 'Sora', sans-serif;
-            font-size: 15px;
-            overflow: hidden;
-        }
-
-        footer {
-            width: 100%;
-            height: 100vh;
-            background-color: black;
-            position: relative;
-
-        }
-
-        #footerContainer {
-            display: flex;
-        }
-
-        #contactInfo {
-            width: 650px;
-        }
-
-        #message {
-            width: 600px;
-        }
-
-        @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
-
-        .input-container {
-            position: relative;
-            margin-bottom: 25px;
-            margin-top: 50px;
-        }
-
-        .input-container label {
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: 16px;
-            color: #fff;
-            pointer-event: none;
-            transition: all 0.5s ease-in-out;
-        }
-
-        .input-container input {
-            border: 0;
-            border-bottom: 1px solid #555;
-            background: transparent;
-            width: 100%;
-            padding: 8px 0 5px 0;
-            font-size: 16px;
-            color: #fff;
-            margin-top: 20px;
-        }
-
-        .input-container textarea {
-            border: 0;
-            border-bottom: 1px solid #555;
-            background: transparent;
-            width: 100%;
-            height: 100px;
-            padding: 8px 0 5px 0;
-            font-size: 16px;
-            color: #fff;
-            margin-top: 20px;
-        }
-
-        .input-container input:focus {
-            border: none;
-            outline: none;
-            border-bottom: 1px solid #00ffc4;
-        }
-
-        .input-container textarea:focus {
-            border: none;
-            outline: none;
-            border-bottom: 1px solid #00ffc4;
-        }
-
-
-        .input-container input:focus ~ label,
-        .input-container input:valid ~ label {
-            top: -12px;
-            font-size: 12px;
-
-        }
-
-        .input-container textarea:focus ~ label,
-        .input-container textarea:valid ~ label {
-            top: -12px;
-            font-size: 12px;
-
-        }
-
-
-        #messageForm {
-            position: relative;
-            top: 90px;
-        }
-
-        #sendMessage {
-            border-radius: 10px;
-            width: 130px;
-            height: 40px;
-            color: #00ffc4;
-            background-color: black;
-            border-color: #00ffc4;
-            font-family: 'Sora', sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        #sendMessage:hover {
-            background-color: #00ffc4;
-            color: black;
-            cursor: pointer;
-            transition: 1s ease;
-            border: none;
-        }
-
-        #contactDetails {
-            display: flex;
-            top: 60px;
-            position: relative;
-            left: 10px;
-        }
-
-        #contactDetails div {
-            width: 220px;
-            height: 130px;
-            text-align: center;
-            font-family: 'Sora', sans-serif;
-        }
-
-        .details{
-            border-radius: 10px;
-            box-shadow: 4px 5px 20px #00241e;
-        }
-
-        #contactDetails div img {
-            position: relative;
-            top: 15px;
-        }
-
-        #contactDetails p {
-            font-size: 12px;
-            top: 20px;
-            position: relative;
-        }
-
-        #btnCv a:hover{
-            color: black;
-            z-index: 1;
-        }
-
-
-
-
-
-
-
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+    <link rel="stylesheet" href="assets/css/styleSheet.css">
 </head>
 <body>
 <header id="head">
@@ -481,7 +35,7 @@
         </ul>
     </div>
 
-    <img src="assets/images/mypic1.png" alt="" height="600px" style="position: absolute; left: 800px; top: 65px">
+    <img src="assets/images/mypic1.png" alt="" height="600" style="position: absolute; left: 800px; top: 65px">
 
     <!--Heading section-->
     <section id="hederSection">
@@ -651,7 +205,7 @@
 
     <div id="cardContainer" class="reveal">
         <div style="width: 30px"></div>
-        <div class="pro_section" style="left: 40px; top: 50px;">
+        <div class="pro_section" style="left: 40px; top: 50px;" onclick="window.open('https://github.com/IsuruVithanage/CarRentalSystem');">
             <img src="assets/images/c2.JPG" alt="" width="100%" height="100%">
             <div class="intro">
                 <h1>Carrental <span style="color: #00ffc4">System</span></h1>
@@ -660,8 +214,8 @@
         </div>
         <div style="width: 50px"></div>
 
-        <div class="pro_section" style="left: 480px; top: -200px;">
-            <img src="assets/images/p10.JPG" alt="" width="100%" height="100%">
+        <div class="pro_section" style="left: 480px; top: -200px;" onclick="window.open('https://github.com/IsuruVithanage/CakeShop');">
+            <img src="assets/images/cake.jpg" alt="" width="100%" height="100%">
             <div class="intro">
                 <h1>CakeShop <span style="color: #00ffc4">System</span></h1>
                 <p>This a Java application for handle orders and the stock of a cake shop</p>
@@ -669,19 +223,19 @@
         </div>
         <div style="width: 50px"></div>
 
-        <div class="pro_section" style="left: 920px; top: -450px;">
+        <div class="pro_section" style="left: 920px; top: -450px;" onclick="window.open('https://github.com/IsuruVithanage/POS-JavaEE/tree/master');">
             <img src="assets/images/jdf.JPG" alt="" width="100%" height="100%">
             <div class="intro">
                 <h1>POS <span style="color: #00ffc4">System</span></h1>
                 <p>Web Application for a POS system using HTML,CSS and Javascipt with Layered Architecture</p>
             </div>
         </div>
-        <a href="" target="_blank" style="color: #00ffc4"><button id="btnViewPro">View All</button></a>
+        <a href="projectTab.html" target="_blank" style="color: #00ffc4"><button id="btnViewPro">View All</button></a>
     </div>
 </main>
+
+
 <footer>
-
-
     <div id="footerContainer">
         <div id="contactInfo">
             <div class="skills_head" style="top: 100px; position: relative">
@@ -709,25 +263,30 @@
             </div>
         </div>
         <div id="message">
-            <form id="messageForm">
+            <form method="post" id="messageForm">
                 <div class="input-container">
-                    <input type="text" required=""/>
+                    <input type="text" id="name" required=""/>
                     <label>Your Name</label>
                 </div>
                 <div class="input-container">
-                    <input type="mail" required=""/>
+                    <input type="email" id="mail"  required=""/>
                     <label>Email</label>
                 </div>
                 <div class="input-container">
-                    <textarea type="mail" required=""></textarea>
+                    <textarea type="text" id="messages" required=""></textarea>
                     <label>Message</label>
                 </div>
                 <input type="submit" id="sendMessage">
             </form>
         </div>
     </div>
-
 </footer>
+
+<a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+<script src="assets/js/main.js"></script>
 
 
 <!--Auto typing effect-->
@@ -740,7 +299,6 @@
         loop: true
     });
 </script>
-
 <!--Fade in animation-->
 <script>
     window.addEventListener("scroll", reveal);
@@ -762,28 +320,6 @@
 
     }
 </script>
-<!--
-<script>
-    const skillsSection = document.getElementsByClassName("skills_section");
-    const progressBar = document.querySelectorAll(".bar");
-
-    function showProgess(){
-        progressBar.forEach(progressBar=>{
-            const value = progressBar.dataset.progress;
-            progressBar.style.opacity = 1;
-            progressBar.style.width = `${value}%`;
-        });
-    }
-
-    window.addEventListener("scroll", ()=>{
-        const sectionPos = skillsSection.getBoundingClientRect().top;
-        const screenPos = window.innerHeight;
-
-        if (sectionPos < screenPos){
-            showProgess();
-        }
-    });
-</script>-->
 <script>
     var speed = 10;
 
@@ -817,6 +353,54 @@
     incEltNbr("n81"); /*Call this funtion with the ID-name for that element to increase the number within*/
 
 </script>
-<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import {initializeApp} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+    import {getDatabase, set, ref} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyAwsZQst86nSJx-NTxMWmam3yem3Q4ygvw",
+        authDomain: "ipmv-b20d4.firebaseapp.com",
+        databaseURL: "https://ipmv-b20d4-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "ipmv-b20d4",
+        storageBucket: "ipmv-b20d4.appspot.com",
+        messagingSenderId: "847046320406",
+        appId: "1:847046320406:web:30b5e3dc0aecc7f2cb3037"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+
+    document.getElementById("messageForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        let name = document.getElementById("name").value;
+        let mail = document.getElementById("mail").value;
+        let message = document.getElementById("messages").value;
+
+        set(ref(db, 'users/' + name), {
+            email: mail,
+            message: message
+        });
+
+        clearTextField();
+        
+        
+
+    });
+    
+    
+    function clearTextField() {
+        document.getElementById("name").value = "";
+        document.getElementById("mail").value = "";
+        document.getElementById("messages").value = "";
+    }
+
+</script>
 </body>
 </html>

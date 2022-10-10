@@ -1,0 +1,464 @@
+/*Style the scrolbar*/
+html {
+    scrollbar-color: rgb(1, 1, 1) rgb(110, 110, 110);
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(110, 110, 110);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(110, 110, 110);
+}
+
+::-webkit-scrollbar-track-piece {
+    background: rgb(1, 1, 1);
+}
+
+/*Header styling*/
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+
+body,html{
+    scroll-behavior: smooth;
+}
+
+
+header > div > ul {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    bottom: 0;
+    font-size: 18px;
+    font-family: 'B612', sans-serif;
+    list-style: none;
+    color: white;
+
+}
+
+li>a{
+    color: #b6b6b6;
+}
+
+header > div:nth-child(1) > ul > li{
+    margin-top: 10px;
+    padding: 0 19px 0 19px;
+    display: inline-block;
+    color: #b6b6b6;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+header > div:nth-child(1) > ul > li a:hover {
+    color: #00ffc4;
+    cursor: pointer;
+}
+
+header > div:nth-child(1) > div {
+    position: relative;
+    height: 30px;
+}
+
+header > div:nth-child(1) > div:nth-child(1) > h3 {
+    margin-top: 9px;
+    padding: 0 19px 0 19px;
+    display: inline-block;
+    font-size: 30px;
+    letter-spacing: 13px;
+    position: absolute;
+    font-family: 'B612', sans-serif;
+    font-weight: 800;
+}
+
+
+header > div:nth-child(1) {
+    color: #a0a0a0;
+    height: 7vh;
+    width: 100%;
+}
+
+h3:hover {
+    color: #00ffc4;
+}
+
+#hederSection > h1 {
+    color: white;
+    position: absolute;
+    left: 100px;
+    top: 230px;
+    font-size: 60px;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 800;
+}
+
+#hederSection > p {
+    width: 600px;
+    color: #9c9c9c;
+    position: absolute;
+    left: 100px;
+    top: 340px;
+    font-size: 21px;
+    font-family: Arial;
+}
+
+#hederSection {
+    position: relative;
+    bottom: 73px;
+    right: 30px;
+}
+
+.icon {
+    position: absolute;
+    top: 450px;
+    left: 70px;
+}
+
+/*Main Styling*/
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+
+#aboutMeSection > h1 {
+    color: white;
+    position: absolute;
+    left: 650px;
+    top: 810px;
+    font-family: 'Sora', sans-serif;
+    font-size: 60px;
+    width: 500px;
+
+}
+
+#aboutMeSection {
+    left: 20px;
+    top: -670px;
+    position: absolute;
+}
+
+#aboutme {
+    color: #d0d0d0;
+    position: absolute;
+    left: 650px;
+    top: 930px;
+    font-family: Arial;
+    font-size: 18px;
+    width: 600px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 200;
+}
+
+button {
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    color: #00ffc4;
+    background-color: black;
+    border-color: #00ffc4;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#btnCv {
+    position: absolute;
+    left: 650px;
+    top: 1150px;
+}
+
+#btnViewPro {
+    top: 330px;
+    left: 600px;
+    position: absolute;
+    z-index: 3;
+}
+
+button:hover {
+    background-color: #00ffc4;
+    color: black;
+    cursor: pointer;
+    transition: 1s ease;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.reveal {
+    position: absolute;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.edu_section {
+    width: 500px;
+    height: 150px;
+    position: relative;
+    left: 50px;
+    border-radius: 15px;
+    /* border: 1px solid #00ffc4;*/
+    text-align: right;
+    box-shadow: 4px 4px 20px #1d1d1d;
+}
+
+
+
+.edu_section p {
+    padding-right: 10px;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    padding-top: 10px;
+
+}
+
+.pro_section {
+    width: 400px;
+    height: 250px;
+    left: 500px;
+    border-radius: 15px;
+    text-align: left;
+    color: white;
+    overflow: hidden;
+}
+
+.intro p {
+    visibility: hidden;
+    padding-left: 2px;
+
+}
+
+.pro_section:hover {
+    cursor: pointer;
+}
+
+.pro_section:hover .intro {
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pro_section:hover .intro p {
+    visibility: visible;
+}
+
+#cardContainer {
+    display: flex;
+}
+
+.intro {
+    height: 70px;
+    width: 400px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.73);
+    color: white;
+    bottom: -1px;
+    transition: 1s;
+    padding-left: 15px;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+
+}
+
+#footerContainer {
+    display: flex;
+}
+
+#contactInfo {
+    width: 650px;
+}
+
+#message {
+    width: 600px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-event: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.input-container textarea {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    height: 100px;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00ffc4;
+}
+
+.input-container textarea:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00ffc4;
+}
+
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+    top: -12px;
+    font-size: 12px;
+
+}
+
+.input-container textarea:focus ~ label,
+.input-container textarea:valid ~ label {
+    top: -12px;
+    font-size: 12px;
+
+}
+
+
+#messageForm {
+    position: relative;
+    top: 90px;
+}
+
+#sendMessage {
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    color: #00ffc4;
+    background-color: black;
+    border-color: #00ffc4;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#sendMessage:hover {
+    background-color: #00ffc4;
+    color: black;
+    cursor: pointer;
+    transition: 1s ease;
+    border: none;
+}
+
+#contactDetails {
+    display: flex;
+    top: 60px;
+    position: relative;
+    left: 10px;
+}
+
+#contactDetails div {
+    width: 220px;
+    height: 130px;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+}
+
+.details{
+    border-radius: 10px;
+    box-shadow: 4px 5px 20px #232323;
+}
+
+#contactDetails div img {
+    position: relative;
+    top: 15px;
+}
+
+#contactDetails p {
+    font-size: 12px;
+    top: 20px;
+    position: relative;
+}
+
+#btnCv a:hover{
+    color: black;
+    z-index: 1;
+}
+
+.to-top {
+    background: #212121;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:32px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+}
