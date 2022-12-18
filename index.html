@@ -35,7 +35,7 @@
         </ul>
     </div>
 
-    <img src="assets/images/mypic1.png" alt="" height="600" style="position: absolute; left: 800px; top: 65px">
+    <img src="assets/images/mypic1.png" alt=""  style="height:100%; position: absolute; left: 55%; top: 65px">
 
     <!--Heading section-->
     <section id="hederSection">
@@ -287,6 +287,7 @@
 </a>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/sweetalert.min.js"></script>
 
 
 <!--Auto typing effect-->
@@ -388,9 +389,13 @@
             message: message
         });
 
-        clearTextField();
-        
-        
+        if(e.isTrusted==true){
+            clearTextField();
+            swal("Success!", "Message Success Fully Sent!", "success");
+        }else {
+            swal("Warning!", "Message Success Fully Sent!", "warning");
+
+        }
 
     });
     
