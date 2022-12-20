@@ -44,7 +44,7 @@ header > div > ul {
     right: 2%;
     top: 13px;
     bottom: 0;
-    font-size: 18px;
+    font-size: 1.3vw;
     font-family: 'B612', sans-serif;
     list-style: none;
     color: white;
@@ -79,7 +79,7 @@ header > div:nth-child(1) > div:nth-child(1) > h3 {
     margin-top: 9px;
     padding: 0 19px 0 19px;
     display: inline-block;
-    font-size: 30px;
+    font-size: 2.3vw;
     letter-spacing: 13px;
     position: absolute;
     font-family: 'B612', sans-serif;
@@ -127,7 +127,7 @@ h3:hover {
 .icon {
     position: absolute;
     top: 60vh;
-    left: 4.1vw;
+    left: 4.6vw;
 }
 
 /*Main Styling*/
@@ -142,31 +142,30 @@ main {
 #aboutMeSection > h1 {
     color: white;
     position: absolute;
-    left: 650px;
-    top: 810px;
     font-family: 'Sora', sans-serif;
-    font-size: 60px;
-    width: 500px;
+    font-size: 5vw;
+    top: 2vh;
 
 }
 
 #aboutMeSection {
-    left: 20px;
-    top: -670px;
-    position: absolute;
+    left: 45vw;
+    top: 25vh;
+    position: relative;
+    width: 45vw;
+    height: 50vh;
 }
 
 #aboutme {
     color: #d0d0d0;
     position: absolute;
-    left: 650px;
-    top: 930px;
     font-family: Arial;
-    font-size: 18px;
-    width: 600px;
+    font-size: 1.3vw;
+    width: 45vw;
     text-align: justify;
     text-justify: inter-word;
     font-weight: 200;
+    top: 20vh;
 }
 
 button {
@@ -183,15 +182,17 @@ button {
 
 #btnCv {
     position: absolute;
-    left: 650px;
-    top: 1150px;
+    top: 45vh;
 }
 
 #btnViewPro {
-    top: 330px;
-    left: 600px;
+    top: 47vh;
+    left: 45vw;
     position: absolute;
     z-index: 3;
+    width: 8vw;
+    height: 5vh;
+    font-size: 1vw;
 }
 
 button:hover {
@@ -209,22 +210,22 @@ a {
 
 .reveal {
     position: absolute;
-    transform: translateY(150px);
+    transform: translateY(20vh);
     opacity: 0;
     transition: all 2s ease;
 }
 
 .reveal.active {
-    transform: translateY(0px);
+    transform: translateY(0vh);
     opacity: 1;
 }
 
 
 .edu_section {
-    width: 500px;
-    height: 150px;
+    width: 34vw;
+    height: 20vh;
     position: relative;
-    left: 50px;
+    left: 10vw;
     border-radius: 15px;
     /* border: 1px solid #00ffc4;*/
     text-align: right;
@@ -234,17 +235,17 @@ a {
 
 
 .edu_section p {
-    padding-right: 10px;
+    padding-right: 1.5vw;
     color: white;
     font-family: 'Sora', sans-serif;
-    padding-top: 10px;
+    padding-top: 1.3vh;
 
 }
 
 .pro_section {
-    width: 400px;
-    height: 250px;
-    left: 500px;
+    width: 27vw;
+    height: 30vh;
+    left: 20vw;
     border-radius: 15px;
     text-align: left;
     color: white;
@@ -254,6 +255,12 @@ a {
 .intro p {
     visibility: hidden;
     padding-left: 2px;
+    font-size: 1vw;
+
+}
+
+.intro h1 {
+    font-size: 2vw;
 
 }
 
@@ -262,7 +269,7 @@ a {
 }
 
 .pro_section:hover .intro {
-    height: 130px;
+    height: 20vh;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -272,11 +279,12 @@ a {
 
 #cardContainer {
     display: flex;
+    top: 25vh;
 }
 
 .intro {
-    height: 70px;
-    width: 400px;
+    height: 10vh;
+    width: 27vw;
     box-sizing: border-box;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.73);
@@ -299,22 +307,29 @@ footer {
 
 #footerContainer {
     display: flex;
+    padding-left: 7vw;
 }
 
 #contactInfo {
-    width: 650px;
+    width: 40vw;
+    top: 17vh;
+    position: relative;
 }
 
 #message {
-    width: 600px;
+    width:40vw;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=greek-ext');
 
 .input-container {
     position: relative;
-    margin-bottom: 25px;
-    margin-top: 50px;
+    margin-bottom: 5vh;
+    margin-top: 7vh;
+}
+
+label {
+    font-size: 2vw;
 }
 
 .input-container label {
@@ -380,7 +395,8 @@ footer {
 
 #messageForm {
     position: relative;
-    top: 90px;
+    top: 15vh;
+    left: 5vw;
 }
 
 #sendMessage {
@@ -405,9 +421,9 @@ footer {
 
 #contactDetails {
     display: flex;
-    top: 60px;
+    top: -2vh;
     position: relative;
-    left: 10px;
+    left: 0.5vw;
 }
 
 #contactDetails div {
@@ -420,6 +436,9 @@ footer {
 .details{
     border-radius: 10px;
     box-shadow: 4px 5px 20px #232323;
+    width: 7vw;
+    height: 6vh;
+    text-align: center;
 }
 
 #contactDetails div img {
