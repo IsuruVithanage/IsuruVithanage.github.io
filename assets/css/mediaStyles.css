@@ -164,9 +164,9 @@ body {
         display: flex;
     }
 
-    #pic1{
+    /*#pic1{
         display: none;
-    }
+    }*/
 
     .navbar>h3{
         margin-top: 1vh;
@@ -183,6 +183,22 @@ body {
         width: 78vw;
         top: 15vh;
         padding-left: 7vw;
+    }
+
+    .icon {
+        position: relative;
+        top: 19vh;
+        left: 6vw;
+        width: 47vw;
+        height: 10vh;
+    }
+
+    #hederSection {
+        position: relative;
+        bottom: 7vh;
+        width: 70vw;
+        height: 50vh;
+        top: 26vh;
     }
 
 
