@@ -5,17 +5,17 @@ html {
 
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 0.5vw;
 }
 
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
-    border-radius: 8px;
+    border-radius: 0.5vw;
 }
 
 ::-webkit-scrollbar-thumb {
     background: rgb(110, 110, 110);
-    border-radius: 10px;
+    border-radius: 0.7vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -51,9 +51,6 @@ header > div > ul {
 
 }
 
-li>a{
-    color: #b6b6b6;
-}
 
 header > div:nth-child(1) > ul > li{
     margin-top: 10px;
@@ -75,8 +72,8 @@ header > div:nth-child(1) > div {
     height: 30px;
 }
 
-header > div:nth-child(1) > div:nth-child(1) > h3 {
-    margin-top: 9px;
+/*header >  div:nth-child(1) > h3 {
+    margin-top: 1vh;
     padding: 0 19px 0 19px;
     display: inline-block;
     font-size: 2.3vw;
@@ -84,11 +81,11 @@ header > div:nth-child(1) > div:nth-child(1) > h3 {
     position: absolute;
     font-family: 'B612', sans-serif;
     font-weight: 800;
-}
+}*/
 
 
 header > div:nth-child(1) {
-    color: #a0a0a0;
+    color: #000000;
     height: 7vh;
     width: 100%;
 }
