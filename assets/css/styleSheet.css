@@ -97,35 +97,42 @@ h3:hover {
 #hederSection > h1 {
     color: white;
     position: absolute;
-    left: 6.5%;
-    top: 25vh;
+    /*left: 6.5%;*/
+    /*top: 25vh;*/
     font-size: 5.5vw;
     font-family: 'Sora', sans-serif;
     letter-spacing: 10px;
     font-weight: 800;
+    padding-left: 3vw;
 }
 
 #hederSection > p {
-    width: 45%;
+    width:45vw;
     color: #9c9c9c;
     position: absolute;
-    left: 6.5%;
-    top: 45vh;
+    /*left: 6.5%;*/
+    top: 21vh;
     font-size: 1.6vw;
     font-family: Arial;
+    padding-left: 3vw;
 }
 
 #hederSection {
     position: relative;
-    bottom: 7%;
-    right: 30px;
+    bottom: 7vh;
+    width: 70vw;
+    height: 50vh;
+    top: 15vh;
 }
 
 .icon {
-    position: absolute;
-    top: 60vh;
-    left: 4.6vw;
+    position: relative;
+    top:35vh;
+    left: 2vw;
+    width: 23vw;
+    height: 10vh;
 }
+
 
 /*Main Styling*/
 main {
