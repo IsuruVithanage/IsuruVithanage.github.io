@@ -159,7 +159,7 @@ body {
 }
 
 #toph3{
-    top:4vh;
+    top:5vh;
     display: none;
     position: absolute;
     font-size: 12vw;
@@ -195,6 +195,10 @@ body {
     position: absolute;
 }
 
+#pic3{
+    display: none;
+}
+
 
 
 
@@ -219,6 +223,24 @@ body {
 
     #pic1{
         display: none;
+    }
+
+    #pic4{
+        display: none;
+    }
+
+    #pic3{
+        display: block;
+        left:6.6vw;
+    }
+
+    #aboutMeSection > h1 {
+        color: white;
+        position: absolute;
+        font-family: 'Sora', sans-serif;
+        font-size: 15vw;
+        top: -20vh;
+        right: 40vw;
     }
 
     .navbar-links {
@@ -254,14 +276,14 @@ body {
     #hederSection>p{
         font-size: 4vw;
         width: 96vw;
-        top: 15vh;
+        top: 16.3vh;
         padding-left: 4vw;
     }
 
     .icon {
         position: relative;
-        top: 23vh;
-        left: 5vw;
+        top: 24vh;
+        left: 4.3vw;
         width: 74vw;
         height: 10vh;
     }
@@ -294,6 +316,32 @@ body {
 
     #toph1{
         display: none;
+    }
+
+    #aboutme {
+        color: #d0d0d0;
+        font-size: 2.5vw;
+        width: 45vw;
+        top: 4vh;
+        right: 38vw;
+    }
+
+    button {
+        border-radius: 7px;
+        width: 75px;
+        height: 27px;
+        color: #00ffc4;
+        background-color: black;
+        border-color: #00ffc4;
+        font-family: 'Sora', sans-serif;
+        font-size: 7px;
+        font-weight: 600;
+    }
+
+    #btnCv {
+        position: absolute;
+        top: 25vh;
+        right: 64vw;
     }
 
 
