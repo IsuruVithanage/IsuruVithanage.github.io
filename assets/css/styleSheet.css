@@ -94,11 +94,9 @@ h3:hover {
     color: #00ffc4;
 }
 
-#hederSection > h1 {
+#toph1 {
     color: white;
     position: absolute;
-    /*left: 6.5%;*/
-    /*top: 25vh;*/
     font-size: 5.5vw;
     font-family: 'Sora', sans-serif;
     letter-spacing: 10px;

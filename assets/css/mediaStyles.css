@@ -131,6 +131,74 @@ body {
     font-weight: 800;
 }
 
+#pic2{
+    display: none;
+}
+
+#git{
+    width: 2.7vw;
+}
+
+#ints{
+    width: 3.3vw;
+}
+
+.icon a image{
+    width: 3.4vw;
+}
+
+#toph2{
+    display: none;
+    color: white;
+    position: absolute;
+    font-size: 10vw;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 800;
+    padding-left: 4vw;
+}
+
+#toph3{
+    top:4vh;
+    display: none;
+    position: absolute;
+    font-size: 12vw;
+    font-family: 'Sora', sans-serif;
+    letter-spacing: 7px;
+    font-weight: 800;
+    padding-left: 4vw;
+
+}
+
+.icon {
+    position: relative;
+    top: 36vh;
+    left: 3vw;
+    width: 30vw;
+    height: 10vh;
+}
+.icon div{
+    width: 4.3vw;
+    height: 10vh;
+    display: inline-flex;
+    position: relative;
+    padding-right: 0.8vw;
+
+}
+
+.icon a{
+    position: absolute;
+}
+
+.icon a img{
+    width:3.7vw;
+    position: absolute;
+}
+
+
+
+
+
 @media (max-width: 930px) {
     .navbar {
         flex-direction: column;
@@ -139,6 +207,18 @@ body {
 
     .toggle-button {
         display: flex;
+    }
+
+    #toph2,#toph3{
+        display: block;
+    }
+
+    #pic2{
+        display: block;
+    }
+
+    #pic1{
+        display: none;
     }
 
     .navbar-links {
@@ -164,33 +244,43 @@ body {
         display: flex;
     }
 
-    /*#pic1{
-        display: none;
-    }*/
 
     .navbar>h3{
         margin-top: 1vh;
         font-size: 2.5rem;
     }
 
-    #hederSection>h1{
-        font-size: 10vw;
-        padding-left: 7vw;
-    }
 
     #hederSection>p{
-        font-size: 3vw;
-        width: 78vw;
+        font-size: 4vw;
+        width: 96vw;
         top: 15vh;
-        padding-left: 7vw;
+        padding-left: 4vw;
     }
 
     .icon {
         position: relative;
-        top: 19vh;
-        left: 6vw;
-        width: 47vw;
+        top: 23vh;
+        left: 5vw;
+        width: 74vw;
         height: 10vh;
+    }
+    .icon div{
+        width: 12vw;
+        height: 6vh;
+        display: inline-flex;
+        position: relative;
+        padding-right: 4vw;
+
+    }
+
+    .icon a{
+        position: absolute;
+    }
+
+    .icon a img{
+        width:10vw;
+        position: absolute;
     }
 
     #hederSection {
@@ -199,6 +289,11 @@ body {
         width: 70vw;
         height: 50vh;
         top: 26vh;
+    }
+
+
+    #toph1{
+        display: none;
     }
 
 
