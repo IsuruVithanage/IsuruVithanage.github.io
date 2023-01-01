@@ -340,8 +340,39 @@ body {
 
     #btnCv {
         position: absolute;
-        top: 25vh;
+        top: 28vh;
         right: 64vw;
+    }
+
+    .skills_head{
+        width: 100%;
+        margin-bottom: 5vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+    .skills_head h2{
+        font-size: 12vw;
+        margin-bottom: -5px;
+    }
+
+    .skill_bar .bar {
+        width: 100%;
+        height: 8px;
+        background-color: rgba(0, 0, 0, 0.144);
+        border-radius: 25px;
+        margin-top: 5px;
+        position: relative;
+        transition: all 15s;
+    }
+
+    .skill_bar .info p:nth-child(1) {
+        font-size: 3vw;
+    }
+
+    .skill_bar .info p:nth-child(2) {
+        font-weight: 500;
+        font-size: 2.5vw;
     }
 
 

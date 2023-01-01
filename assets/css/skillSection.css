@@ -19,7 +19,7 @@
 }
 .skills_head{
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
     display: grid;
     place-items: center;
     text-align: center;
