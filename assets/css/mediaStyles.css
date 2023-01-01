@@ -231,7 +231,7 @@ body {
 
     #pic3{
         display: block;
-        left:6.6vw;
+        right: 0;
     }
 
     #aboutMeSection > h1 {
