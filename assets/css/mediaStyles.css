@@ -309,7 +309,7 @@ body {
 
     .icon {
         position: relative;
-        top: 24vh;
+        top: 27vh;
         left: 4.3vw;
         width: 74vw;
         height: 10vh;
@@ -497,6 +497,11 @@ body {
         width: 24vw;
         height: 4vh;
         font-size: 3.3vw;
+    }
+
+    #cardContainer {
+        display: flex;
+        top: 32vh;
     }
 
 
