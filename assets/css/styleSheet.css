@@ -429,8 +429,8 @@ label {
 }
 
 #contactDetails div {
-    width: 220px;
-    height: 130px;
+    width: 18vw;
+    height: 17vh;
     text-align: center;
     font-family: 'Sora', sans-serif;
 }
@@ -446,12 +446,33 @@ label {
 #contactDetails div img {
     position: relative;
     top: 15px;
+    width: 2vw
 }
 
-#contactDetails p {
-    font-size: 12px;
+#contactDetails div:nth-child(1) {
+    width: 1vw;
+}
+
+.details p {
     top: 20px;
     position: relative;
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+.details p:nth-child(3){
+    font-size: 1vw;
+    padding-top: 10px;
+    font-weight: 200;
+}
+
+#address{
+    top: 42vh;
+    left: 1vw;
+    width: 38vw;
+    height: 17vh;
+    position: absolute;
+    text-align: center;
 }
 
 #btnCv a:hover{
