@@ -464,6 +464,44 @@ body {
         top: 21vh;
     }
 
+    #p1{
+        display: none;
+    }
+
+    #p2{
+        display: none;
+    }
+    .pro_section {
+        width: 89vw;
+        height: 28vh;
+    }
+
+    .intro {
+        height: 8vh;
+        width: 89vw;
+    }
+
+    .intro h1 {
+        font-size: 8vw;
+    }
+
+    .intro p {
+        font-size: 4vw;
+    }
+
+    #btnViewPro {
+        top: 38vh;
+        left: 38vw;
+        position: absolute;
+        z-index: 3;
+        width: 24vw;
+        height: 4vh;
+        font-size: 3.3vw;
+    }
+
+
+
+
 
 
 
