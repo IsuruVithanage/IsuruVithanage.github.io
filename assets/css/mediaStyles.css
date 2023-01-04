@@ -526,7 +526,7 @@ body {
     }
 
     #contactDetails {
-        left: 0.4vw;
+        left: 0vw;
     }
 
     #contactDetails div {
@@ -535,7 +535,7 @@ body {
     }
 
     #contactDetails div:nth-child(1) {
-        width: 8vw;
+        width: 7vw;
     }
 
     .details p {
@@ -556,8 +556,8 @@ body {
     }
 
     #address {
-        top: 34vh;
-        left: 10vw;
+        top: 32vh;
+        left: 9vw;
         width: 80vw;
         height: 14vh;
         position: absolute;
@@ -578,6 +578,17 @@ body {
     #sendMessage {
         width: 96px;
         height: 33px;
+    }
+
+    .input-container textarea {
+        height: 10vh;
+        padding: 8px 0 5px 0;
+        font-size: 1vw;
+        margin-top: 3vh;
+    }
+
+    #messageForm {
+        top: 13vh;
     }
 
 

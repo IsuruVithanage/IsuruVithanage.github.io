@@ -379,6 +379,10 @@ label {
     border-bottom: 1px solid #00ffc4;
 }
 
+#contactDetails div:nth-child(1) {
+    width: 1vw;
+}
+
 
 .input-container input:focus ~ label,
 .input-container input:valid ~ label {
